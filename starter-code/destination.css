@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Bellefair&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+}
+.contener{
+    color: white;
+    margin: 20px 165px;
+    padding: 30px 50px;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    
+}
+.content{
+    display: flex;
+    margin-top: 80px;
+}
+.content-left{
+    display: flex;
+    flex: 2;
+}
+.img-moon{
+    margin: 0 0 0 80px;
+    width: 445px;
+}
+.heading{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+}
+.number{
+    color:rgb(102, 100, 100);
+}
+.content-right{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.content-menu{
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 286px;
+    height: 30px;
+    font-size: 16px;    
+}
+.content-menu a{
+    text-decoration: none;
+    color: white;
+}
+/* .item-main{
+  
+} */
+.item-a:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255,0.5);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -13px;
+}
+.item-a:hover::after{
+    width: 100%;
+}
+/* .moon-menu{
+    position:absolute;
+    height: 28.5px;
+    border-bottom: 3px solid white;
+    height: 30px;
+    width: 27.41px;
+} */
+.moon{
+    margin: 40px 0;
+    font-size: 100px;
+    font-family: 'Bellefair', serif;
+    font-weight: lighter; 
+    text-transform: uppercase;
+}
+p{
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 40px;
+    /* max-width: max-content; */
+}
+hr{ 
+    border: 1px solid rgb(56, 59, 75,0.5);
+    margin-bottom: 20px;
+}
+.content-buttom{
+    text-transform: uppercase;
+    display: flex;
+
+}
+.distance{
+    flex:1;   
+}
+.time{
+    flex: 1;
+}
+li{ 
+    list-style: none;
+}
+.list1{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    padding: 5px 0;
+}
+.list2{
+    font-family: 'Bellefair', serif;
+    font-weight: lighter;
+    font-size: 28px;
+    padding: 5px 0;
+}
+
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+    body{
+        /* background-image: url(./assets/destination/background-destination-tablet.jpg); */
+        /* background-size: cover; */
+    }
+    .contener{
+        color: white;
+        margin: 20px 40px;
+        padding: 30px 0px;
+  
+    }
+    .content {
+        padding: 30px 95px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .nav-content{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 50px 0 0 0;
+    }
+    .img-moon{
+        width: 300px;
+        margin: 0;
+
+    }
+    .content-menu{
+        width: 350px;
+        padding-left: 45px;
+        margin: 0 100px;
+    }
+    
+
+}
+
+@media only screen and (max-width: 375px){
+    body{
+        background-image: url(./assets/destination/background-destination-mobile.jpg);
+    }
+    .contener{
+        text-align: center;
+    }
+    .heading{
+        font-size: 16px;
+    }
+    .content{
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .img-moon{
+        width: 170px;
+    }
+    .content-right{
+        width: 300px;
+    }
+    .nav-content{
+      margin: 30px 0 0 32px;
+    }
+    .content-menu{
+        margin: 0 10px;
+        padding: 0 20px;
+        width: 240px;
+        font-size: 14px; 
+    }
+    .moon{
+        font-size: 56px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .content-buttom {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    hr{
+        
+    }
+    .distance {
+        margin: 10px 0;
+    }
+    .time{
+        margin: 10px 0;
+    }
+    .list1{
+        font-size: 14px;
+    }
+    .list2{
+        font-size: 28px;
+    }
+
+
+}
+
+
+    

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Bellefair&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
+    
+}
+/* .heading{
+    margin-bottom: 154px;
+} */
+.contener{
+    margin: 50px 165px 0 165px;
+    /* height:700px; */
+    /* overflow: hidden; */
+}
+.content{
+    display: flex;
+    /* height: 495px; */
+    /* border: 2px solid red; */
+}
+.content-left{
+    flex: 2;
+    
+}
+.content-right{
+    flex: 1;
+    text-align: center;
+    /* position: relative; */
+    /* bottom: -50px; */
+    
+}
+.heading{
+    color: white;
+    font-size: 28px;
+    font-family: "Barlow Condensed";
+    margin-bottom: 150px;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    
+}
+.no{
+    color:rgb(255, 255, 255,0.25);
+    letter-spacing: 0;
+}
+.position{
+    color: rgb(255, 255, 255,0.5);
+    margin-bottom: 15px;
+    font-size: 32px;
+    font-family: "Bellefair";
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.name{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 56px;
+    font-family: "Bellefair";
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+p{
+    color: #D0D6F9;
+    font-size: 18px;
+    font-family: "Barlow";
+    width: 450px;  
+    height: 200px;
+}
+/* .content-right{
+    height: 655px;
+    overflow: hidden;
+} */
+.btu{
+    background-color: rgb(255, 255, 255,0.174);
+    margin: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    margin-top: 30px ;
+}
+.btu-main{
+    background-color: rgba(255, 255, 255);
+    margin: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+}
+.btu:hover{
+    background-color: rgba(255, 255, 255,0.5);
+}
+.crew-menu::after{
+    height: 0;
+}
+
+.douglas{
+    position: relative; 
+    top: -188px; 
+    width: 500px; 
+}
+
+.mark{
+    position: relative; 
+    top: -146px;  
+}
+.victor{
+    position: relative;
+    top: -152px;         
+}
+.anousheh{
+    position: relative;
+    top: -82px;
+    width: 550px;           
+}
+
+
+/* tablet */
+@media only screen and (max-width: 768px){
+    body{
+        background-image: url(./assets/crew/background-crew-tablet.jpg);
+        background-size: cover;
+        /* height: 1024px; */
+         
+    }
+    .contener{
+        margin: 50px 150px;
+        /* height: 892px; */
+        /* border: 2px solid red; */
+    }
+    .content{
+        flex-direction: column;
+        
+    }
+    .heading{
+        margin-bottom: 60px;
+    }
+    .content-left{
+        text-align: center;
+    }
+    .position{
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    .name{
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
+    p{
+        font-size: 16px;
+        margin: 0 10px 40px 10px ;
+        height: auto;   
+    }
+
+    .douglas{
+        /* position:relative; */
+        top: 50px; 
+        width: 370px; 
+    }
+    .mark{
+        top: 47px; 
+        width: 330px; 
+    }
+    .victor{
+        top: 40px; 
+        width: 420px;         
+    }
+    .anousheh{
+        top: 60px;
+        width: 450px;           
+    }
+    
+}
+
+@media only screen and (max-width: 375px) {
+    body{
+        background-image: url(./assets/crew/background-crew-mobile.jpg);
+        background-size: cover;
+    } 
+    .heading{
+        margin-bottom: 32px;
+    }
+    .contener{
+        margin: 50px 25px;
+    }
+    .content {
+        align-items: center;
+        margin: 0;
+    }
+   
+   
+    .content-right{
+        order: 1;
+        width: 327px;
+        border-bottom: 1px solid rgb(255, 255, 255,0.25);
+        overflow: hidden;
+    }
+    
+    .douglas , .mark ,.victor, .anousheh{
+        top: 5px;
+        height: 223px;
+        width: auto;
+    }
+
+    .heading{
+        text-align: center;
+        font-size: 16px;
+    }
+    .content-left{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+    }
+    .position{
+        order: 2;
+        font-size: 16px;
+        margin-top: 32px;
+    }
+    .name{
+        order: 3;
+        font-size: 24px;
+    }
+    p{
+        order: 4;
+        font-size: 15px;
+        width: 327px;
+        /* height: 200px; */
+    }
+    .crew-menu{
+        order: 1;
+        margin-top: 32px;
+        /* display: flex; */
+    }
+    .btu{
+        margin: 5px;
+        width: 10px;
+        height: 10px;
+        
+    }
+    .btu-com{
+        margin: 5px;
+        width: 10px;
+        height: 10px;
+    }
+}
